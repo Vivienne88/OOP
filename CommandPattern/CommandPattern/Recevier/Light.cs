@@ -8,14 +8,21 @@ namespace CommandPattern
 {
     public class Light
     {
+        string location;
+
+        public Light(string location)
+        {
+            this.location = location;
+        }
+
         public void On()
         {
-            Console.WriteLine("Light is on");
+            Console.WriteLine("{0} Light is on", this.location);
         }
 
         public void Off()
         {
-            Console.WriteLine("Light is off");
+            Console.WriteLine("{0} Light is off", this.location);
         }
     }
 }
